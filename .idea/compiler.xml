@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="java-high-concurrency" />
+        <module name="java-high-concurrency2" />
+        <module name="hbb-util" />
+        <module name="java-spi" />
+        <module name="java-spi-user" />
+        <module name="validator-test" />
+        <module name="spring-test" />
+        <module name="java-provider" />
+        <module name="reflex-test" />
+        <module name="mycat-test" />
+        <module name="io-test" />
+        <module name="thread-test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-provider-api" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hbb-util" options="-parameters" />
+      <module name="java-high-concurrency" options="-parameters" />
+      <module name="java-high-concurrency2" options="-parameters" />
+      <module name="java-provider" options="" />
+      <module name="java-spi" options="" />
+      <module name="java-spi-user" options="" />
+      <module name="mycat-test" options="-parameters" />
+      <module name="spring-test" options="-parameters" />
+      <module name="thread-test" options="-parameters" />
+      <module name="validator-test" options="-parameters" />
+    </option>
+  </component>
+</project>

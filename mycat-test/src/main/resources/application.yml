@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.132.97.234:8099/mycat_test?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root@3131.
+    hikari:
+      max-lifetime: 60000
+  jackson:
+    default-property-inclusion: non_null #禁止返回实体类中为null的值
+
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:xml/*.xml

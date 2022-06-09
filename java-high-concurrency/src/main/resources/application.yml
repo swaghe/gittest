@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/high_concurrency?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+
+  rabbitmq:
+    host: 101.132.97.234
+    username: admin
+    password: root
+    port: 5672
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+server:
+  tomcat:
+    threads:
+      max: 500
+      min-spare: 100
+    accept-count: 1000
+logging:
+  config: classpath:logback-spring.xml
+
