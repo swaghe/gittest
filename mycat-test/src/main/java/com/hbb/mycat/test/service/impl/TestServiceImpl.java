@@ -59,6 +59,6 @@ public class TestServiceImpl extends ServiceImpl<TestMapper, Test> implements Te
     }
 
     public void dev() {
-
+        System.out.println("haha");
     }
 }
